@@ -1,7 +1,7 @@
 node {
     def app
 
-    def rtServer = Artifactory.server ArtifactoryLab
+    def rtServer = Artifactory.server 'ArtifactoryLab'
     def rtDocker = Artifactory.docker server: rtServer
 
     stage('Clone repository') {
